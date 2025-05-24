@@ -1,11 +1,11 @@
-// 简单的表单提交交互，仿苹果官网风格
+// Simple form submission interaction, Apple-style
 
 document.addEventListener('DOMContentLoaded', function() {
   const form = document.getElementById('contact-form');
   if (form) {
     form.addEventListener('submit', function(e) {
       e.preventDefault();
-      alert('感谢您的留言！我们会尽快与您联系。');
+      alert('Thank you for your message! I will get back to you soon.');
       form.reset();
     });
   }
