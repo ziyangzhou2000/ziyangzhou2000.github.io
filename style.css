@@ -1,0 +1,159 @@
+/* Apple风格简洁现代响应式CSS */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+  background: #f5f5f7;
+  color: #1d1d1f;
+}
+
+.navbar {
+  background: rgba(255,255,255,0.96);
+  box-shadow: 0 1px 6px rgba(0,0,0,0.04);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.navbar-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 32px;
+  height: 56px;
+}
+.logo {
+  font-weight: 700;
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 32px;
+  margin: 0;
+  padding: 0;
+}
+.nav-links a {
+  text-decoration: none;
+  color: #1d1d1f;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+.nav-links a:hover {
+  color: #0071e3;
+}
+
+.hero {
+  background: linear-gradient(120deg, #f5f5f7 60%, #e0e0e6 100%);
+  padding: 80px 0 60px 0;
+  text-align: center;
+}
+.hero-content h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+.hero-content p {
+  font-size: 1.3rem;
+  color: #6e6e73;
+  margin-bottom: 32px;
+}
+.hero-btn {
+  background: #0071e3;
+  color: #fff;
+  padding: 12px 32px;
+  border-radius: 24px;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 600;
+  transition: background 0.2s;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+}
+.hero-btn:hover {
+  background: #005bb5;
+}
+
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 16px 0 16px;
+}
+.section {
+  margin-bottom: 56px;
+}
+.section h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 18px;
+}
+.projects-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+.project-card {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  padding: 24px;
+  flex: 1 1 260px;
+  min-width: 220px;
+  max-width: 320px;
+}
+.project-card h3 {
+  margin-top: 0;
+  font-size: 1.2rem;
+}
+#contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 400px;
+}
+#contact-form input, #contact-form textarea {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #d2d2d7;
+  font-size: 1rem;
+  background: #fafafc;
+  resize: none;
+}
+#contact-form button {
+  background: #0071e3;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+#contact-form button:hover {
+  background: #005bb5;
+}
+.footer {
+  text-align: center;
+  color: #86868b;
+  font-size: 0.95rem;
+  padding: 32px 0 16px 0;
+  background: none;
+}
+@media (max-width: 700px) {
+  .navbar-container {
+    padding: 0 12px;
+  }
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+  main {
+    padding: 24px 4px 0 4px;
+  }
+  .projects-list {
+    flex-direction: column;
+    gap: 16px;
+  }
+} 
