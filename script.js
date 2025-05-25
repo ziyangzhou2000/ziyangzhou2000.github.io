@@ -1,5 +1,3 @@
-// Simple form submission interaction, Apple-style
-
 document.addEventListener('DOMContentLoaded', function() {
   const form = document.getElementById('contact-form');
   if (form) {
